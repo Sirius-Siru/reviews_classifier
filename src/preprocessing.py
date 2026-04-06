@@ -17,4 +17,4 @@ def tokenization(data):
     return data.split()
 
 def to_bigrams(data):
-    return list(ngrams(data, 2))
+    return list(ngrams(data, 2)) 
