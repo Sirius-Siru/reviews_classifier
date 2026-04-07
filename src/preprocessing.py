@@ -14,7 +14,7 @@ def clean(data):
     return data
 
 def tokenization(data):
-    return data.split()
+    return data.str.split()
 
 def to_bigrams(data):
     return list(ngrams(data, 2)) 
