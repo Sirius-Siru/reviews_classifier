@@ -8,13 +8,13 @@ def rm_special(data):
     return data
 
 def clean(data):
-    data = data.str.lower()
+    data = data.lower()
     data = rm_special(data)
     data = re.sub(r'\s+', ' ', data).strip()
     return data
 
 def tokenization(data):
-    return data.str.split()
+    return data.split()
 
 def to_bigrams(data):
     return list(ngrams(data, 2)) 
