@@ -43,5 +43,5 @@ def aug(text):
     elif choice == 'swap':
         augmented = swap_rand(words, n=2)
     else:
-        augmented = shuf_rand(words, n=2)
+        augmented = shuf_rand(words)
     return " ".join(augmented)
